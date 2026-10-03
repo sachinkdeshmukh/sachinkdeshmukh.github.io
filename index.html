@@ -1,10 +1,14 @@
+---
+layout: null
+title: Sachin Deshmukh | Building AI Platforms & Enterprise Software
+---
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sachin Deshmukh — Software, AI &amp; Products</title>
-  <meta name="description" content="Sachin Deshmukh. Building Synergius AI and Synergius Flow. Notes on software, applied AI and product building.">
+  <meta name="description" content="Sachin Deshmukh. Building Synergius AI and Synergius Flow. Notes on software, applied AI, and product building.">
   <style>
     :root { color-scheme: light; --ink: #252724; --muted: #656960; --link: #315d49; }
     * { box-sizing: border-box; }
@@ -23,6 +27,9 @@
     li { padding-left: 3px; margin: 7px 0; }
     footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid #dedfd7; font-size: 14px; color: var(--muted); }
     footer a { display: inline-block; margin-right: 20px; }
+    .posts { list-style: none; padding: 0; }
+    .posts li { margin: 0; padding: 12px 0; border-bottom: 1px solid #e8e8e1; }
+    .posts time { display: block; font-size: 13px; color: var(--muted); }
     @media (max-width: 480px) { main { padding: 42px 23px 30px; } body { font-size: 16px; } }
   </style>
 </head>
@@ -30,34 +37,47 @@
   <main>
     <header>
       <h1>Sachin Deshmukh</h1>
-      <p class="intro">Software, applied AI and product building.</p>
+      <p class="intro">Software, applied AI, and product building. Based in Pune, India.</p>
     </header>
 
     <section aria-labelledby="about">
       <h2 id="about">About</h2>
-      <p>I’m a technology founder and consultant. My work spans AI/ML, platform engineering, enterprise product strategy and GTM. I enjoy the whole process: understanding a problem, building the software and figuring out how to make it useful to people.</p>
-      <p>Currently, I am building <a href="https://synergius.ai">Synergius AI</a> and <a href="https://synergius.ai/synergius_flow.html">Synergius Flow</a>. The question behind both is simple : how can AI help get enterprise work done, with people still able to review decisions and control what happens next?</p>
+      <p>I’m a technology founder and consultant. My work spans AI/ML, platform engineering, product strategy, architecture, and go-to-market. I enjoy the whole process: understanding a problem, building the software, and figuring out how to make it useful to people.</p>
+      <p>I’ve worked at IBM, JPMorgan Chase, and Cerence, which was spun off from Nuance Communications.</p>
+      <p>Today, I’m building <a href="https://synergius.ai/">Synergius AI</a> and <a href="https://synergius.ai/synergius_flow.html">Synergius Flow</a>. The question behind both is simple: how can AI help get enterprise work done, with people still able to review decisions and control what happens next?</p>
     </section>
 
     <section aria-labelledby="building">
       <h2 id="building">What I’m building</h2>
       <h3><a href="https://synergius.ai/">Synergius AI</a></h3>
-      <p>Small models trained for specific business domains, backed by relevant enterprise knowledge. The focus is practical - classifying requests, extracting information, routing work and recommending next steps. On-premise and air-gapped deployment options help keep sensitive data within the organisation.</p>
+      <p>Small models trained for specific business domains, backed by relevant enterprise knowledge. The focus is practical: classifying requests, extracting information, routing work, and recommending next steps. On-premise and air-gapped deployment options help keep sensitive data within the organisation.</p>
       <h3><a href="https://synergius.ai/synergius_flow.html">Synergius Flow</a></h3>
-      <p>The orchestration layer that connects AI with the work around it: systems, tasks, dependencies, schedules and people. Workflows can pause for approval, recover from failures and keep a record of each step.</p>
+      <p>The orchestration layer that connects AI with the work around it: systems, tasks, dependencies, schedules, and people. Workflows can pause for approval, recover from failures, and keep a record of each step.</p>
       <ul>
-        <li><strong>Connect existing systems.</strong> Bring AI into enterprise tools, databases and APIs.</li>
-        <li><strong>Keep people involved.</strong> Put review and approval where the decision is required.</li>
-        <li><strong>Make execution traceable.</strong> Record inputs, actions, outcomes and failures.</li>
+        <li><strong>Connect existing systems.</strong> Bring AI into enterprise tools, databases, and APIs.</li>
+        <li><strong>Keep people involved.</strong> Put review and approval where the decision warrants it.</li>
+        <li><strong>Make execution traceable.</strong> Record inputs, actions, outcomes, and failures.</li>
       </ul>
     </section>
 
     <section aria-labelledby="elsewhere">
-      <h2 id="elsewhere">Beyond software</h2>
-      <p>I enjoy travel, table tennis and exploring different food cultures. A good trip usually includes time to wander and something new to eat.</p>
+      <h2 id="elsewhere">Away from the screen</h2>
+      <p>I enjoy travel, table tennis, and exploring local food cultures. A good trip usually includes time to wander and something new to eat.</p>
     </section>
 
-    <!-- Add links to actual essays and published papers here when ready. -->
+    {% if site.posts.size > 0 %}
+    <section aria-labelledby="writing">
+      <h2 id="writing">Writing</h2>
+      <ul class="posts">
+        {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%-d %B %Y' }}</time>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
     <footer aria-label="Links">
       <a href="https://github.com/sachinkdeshmukh">GitHub</a>
       <a href="https://synergius.ai/">Synergius AI</a>
