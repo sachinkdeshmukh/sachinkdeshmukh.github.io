@@ -1,34 +1,68 @@
----
-layout: home
-title: Sachin Deshmukh | Building AI Platforms & Enterprise Software
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sachin Deshmukh — Software, AI &amp; Products</title>
+  <meta name="description" content="Sachin Deshmukh. Building Synergius AI and Synergius Flow. Notes on software, applied AI and product building.">
+  <style>
+    :root { color-scheme: light; --ink: #252724; --muted: #656960; --link: #315d49; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #faf9f6; color: var(--ink); font: 17px/1.75 system-ui, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 76px 28px 42px; }
+    h1 { margin: 0; font: 400 clamp(34px, 6vw, 46px)/1.2 Georgia, serif; letter-spacing: -1.2px; }
+    .intro { margin: 12px 0 30px; color: var(--muted); font-size: 15px; }
+    h2 { margin: 0 0 16px; font-size: 13px; font-weight: 600; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); }
+    h3 { margin: 22px 0 6px; font: 400 23px/1.4 Georgia, serif; }
+    p { margin: 0 0 16px; }
+    section { margin-top: 38px; }
+    a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 4px; }
+    a:hover { color: var(--ink); }
+    a:focus-visible { outline: 2px solid var(--link); outline-offset: 5px; }
+    ul { margin: 12px 0 0; padding-left: 21px; }
+    li { padding-left: 3px; margin: 7px 0; }
+    footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid #dedfd7; font-size: 14px; color: var(--muted); }
+    footer a { display: inline-block; margin-right: 20px; }
+    @media (max-width: 480px) { main { padding: 42px 23px 30px; } body { font-size: 16px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Sachin Deshmukh</h1>
+      <p class="intro">Software, applied AI and product building.</p>
+    </header>
 
-<div class="intro-section" style="margin-bottom: 2rem;">
-  <h2>About My Work</h2>
-  <p class="lead">
-    Through <strong>Synergius AI</strong> and <strong>Synergius Flow</strong>, I am exploring how AI can move beyond standard chat responses toward supporting practical, controlled enterprise workflows.
-  </p>
-</div>
+    <section aria-labelledby="about">
+      <h2 id="about">About</h2>
+      <p>I’m a technology founder and consultant. My work spans AI/ML, platform engineering, enterprise product strategy and GTM. I enjoy the whole process: understanding a problem, building the software and figuring out how to make it useful to people.</p>
+      <p>Currently, I am building <a href="https://synergius.ai">Synergius AI</a> and <a href="https://synergius.ai/synergius_flow.html">Synergius Flow</a>. The question behind both is simple : how can AI help get enterprise work done, with people still able to review decisions and control what happens next?</p>
+    </section>
 
-<div class="focus-areas" style="margin-top: 2rem;">
-  <h3>Key Focus Areas</h3>
-  <ul>
-    <li><strong>Enterprise Integrations:</strong> Seamlessly connecting LLMs and agentic systems into existing corporate tools and databases.</li>
-    <li><strong>Human Approvals:</strong> Designing human-in-the-loop validation checkpoints for critical decision paths.</li>
-    <li><strong>Execution Trails:</strong> Maintaining transparent, audit-ready logging and deterministic control over workflow operations.</li>
-  </ul>
-</div>
+    <section aria-labelledby="building">
+      <h2 id="building">What I’m building</h2>
+      <h3><a href="https://synergius.ai/">Synergius AI</a></h3>
+      <p>Small models trained for specific business domains, backed by relevant enterprise knowledge. The focus is practical - classifying requests, extracting information, routing work and recommending next steps. On-premise and air-gapped deployment options help keep sensitive data within the organisation.</p>
+      <h3><a href="https://synergius.ai/synergius_flow.html">Synergius Flow</a></h3>
+      <p>The orchestration layer that connects AI with the work around it: systems, tasks, dependencies, schedules and people. Workflows can pause for approval, recover from failures and keep a record of each step.</p>
+      <ul>
+        <li><strong>Connect existing systems.</strong> Bring AI into enterprise tools, databases and APIs.</li>
+        <li><strong>Keep people involved.</strong> Put review and approval where the decision is required.</li>
+        <li><strong>Make execution traceable.</strong> Record inputs, actions, outcomes and failures.</li>
+      </ul>
+    </section>
 
-<div class="projects-section" style="margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid #e8e8e8;">
-  <h3>Platforms & Products</h3>
-  
-  <div style="margin-bottom: 1.5rem;">
-    <h4>Synergius AI</h4>
-    <p>Engineered for secure, scalable AI capabilities across enterprise operations.</p>
-  </div>
+    <section aria-labelledby="elsewhere">
+      <h2 id="elsewhere">Beyond software</h2>
+      <p>I enjoy travel, table tennis and exploring different food cultures. A good trip usually includes time to wander and something new to eat.</p>
+    </section>
 
-  <div>
-    <h4>Synergius Flow</h4>
-    <p>Structured orchestration layer driving human-approved workflow executions with full auditability.</p>
-  </div>
-</div>
+    <!-- Add links to actual essays and published papers here when ready. -->
+    <footer aria-label="Links">
+      <a href="https://github.com/sachinkdeshmukh">GitHub</a>
+      <a href="https://synergius.ai/">Synergius AI</a>
+      <a href="https://synergius.ai/synergius_flow.html">Synergius Flow</a>
+    </footer>
+  </main>
+</body>
+</html>
